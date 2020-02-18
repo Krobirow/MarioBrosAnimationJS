@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    max-width: 950px; 
+}
+
+.grass, .sky, .road {
+    position: relative;
+}
+
+.sky {
+    height: 40%;
+    background: skyblue;
+}
+
+.grass {
+    height: 30%;
+    background: seagreen;
+}
+
+.road {
+    height: 30%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.line {
+    position: absolute;
+    top: 120px;
+    width: 50px;
+    height: 10px;
+    background: #fff; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mario { 
+    position: absolute;
+    top: -40px;
+    left: 260px;
+    transform: rotateY(180deg);
+}
+
+.luigi {
+    position: absolute;
+    top: 130px;
+    left: 450px;
+    transform: rotateY(180deg);
+}
+
+.startAnim {
+    position: absolute;
+    top: 500px; 
+    left: 200px;
+    width: 150px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;   
+    color: rgb(59, 34, 151);
+    background-color:  aqua;
+    z-index: 999;
+}
+.resetAnim{
+    display: none;
+    position: absolute;
+    top: 500px; 
+    left: 400px;
+    width: 150px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;   
+    color: rgb(59, 34, 151);
+    background-color:  aqua;
+    z-index: 999;
+}
+
+.cloud1 {
+    position: absolute;
+    width: 200px;
+    top: 140px;
+    opacity: 0.5;
+}
+
+.cloud2 {
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
